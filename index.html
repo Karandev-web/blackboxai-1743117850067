@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripPlanner AI Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-plane text-blue-500 text-xl"></i>
+                <span class="font-bold text-xl">TripPlanner AI</span>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#" class="text-gray-600 hover:text-blue-500">Features</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">Pricing</a>
+                <a href="#" class="text-gray-600 hover:text-blue-500">About</a>
+            </div>
+            <div class="flex space-x-4">
+                <button class="text-gray-600 hover:text-blue-500 px-3 py-1">Login</button>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Trip Planner Section -->
+    <section class="py-12 px-6 bg-gray-100">
+        <div id="trip-planner-root"></div>
+        <script type="module" src="/trip-planner.js"></script>
+        <link rel="stylesheet" href="/trip-planner.css">
+    </section>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                AI-Powered Trip Planning
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Create your perfect itinerary in seconds with artificial intelligence
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg">
+                    Plan Your Trip
+                </button>
+                <button class="border border-gray-300 hover:bg-gray-100 px-6 py-3 rounded-md text-lg">
+                    See How It Works
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-comment-alt text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1. Tell Us Your Preferences</h3>
+                    <p class="text-gray-600">Describe your ideal trip in natural language</p>
+                </div>
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">2. AI Creates Your Itinerary</h3>
+                    <p class="text-gray-600">Our AI analyzes millions of data points</p>
+                </div>
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-map-marked-alt text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">3. Enjoy Your Perfect Trip</h3>
+                    <p class="text-gray-600">Get a personalized, optimized itinerary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-50">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to Plan Your Next Adventure?</h2>
+            <p class="text-xl text-gray-600 mb-8">Join thousands of travelers using AI to create unforgettable experiences</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md text-lg">
+                Get Started For Free
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 px-6 border-t">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <i class="fas fa-plane text-blue-500"></i>
+                    <span class="font-bold">TripPlanner AI</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                &copy; 2023 TripPlanner AI. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
